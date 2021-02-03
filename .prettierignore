@@ -1,0 +1,8 @@
+.next
+.yarn
+public
+
+.pnp.js
+
+yarn.lock
+package-lock.json

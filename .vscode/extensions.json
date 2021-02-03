@@ -1,0 +1,26 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "aaron-bond.better-comments",
+    "coenraads.bracket-pair-colorizer",
+    "ms-ceintl.vscode-language-pack-zh-hans",
+    "unbug.codelf",
+    "max-ss.cyberpunk",
+    "mikestead.dotenv",
+    "dracula-theme.theme-dracula",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "sleistner.vscode-fileutils",
+    "eamodio.gitlens",
+    "oderwat.indent-rainbow",
+    "shanoor.vscode-nginx",
+    "daylerees.rainglow",
+    "mariusschulz.yarn-lock-syntax",
+    "eamodio.toggle-excluded-files",
+    "wayou.vscode-todo-highlight",
+    "visualstudioexptteam.vscodeintellicode",
+    "ericadamski.carbon-now-sh",
+    "file-icons.file-icons",
+    "vscode-icons-team.vscode-icons"
+  ]
+}

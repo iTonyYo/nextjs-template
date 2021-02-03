@@ -1,0 +1,78 @@
+{
+  "scripts": {
+    "dev": "next dev -p 6868",
+    "dev:debug": "NODE_OPTIONS='--inspect' next dev -p 6868",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint '**/*.js'",
+    "format": "prettier --write \"**/*.{js,mjs,vue,json,md}\" --loglevel silent"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "next": "^10.0.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "debug": "^4.3.1",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-react": "^7.22.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.6"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "prettier",
+      "prettier/react"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint",
+      "sourceType": "module",
+      "ecmaVersion": 2015
+    },
+    "rules": {
+      "react/react-in-jsx-scope": 0
+    }
+  },
+  "eslintIgnore": [
+    ".vscode/**",
+    ".next/**",
+    ".yarn/**",
+    "public/**",
+    "scripts/**",
+    ".pnp.js"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "npm run lint",
+      "npm run format",
+      "git add -A"
+    ]
+  },
+  "prettier": {
+    "endOfLine": "lf",
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all"
+  },
+  "name": "next-repo",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC"
+}
