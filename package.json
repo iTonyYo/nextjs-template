@@ -4,8 +4,8 @@
     "dev:debug": "NODE_OPTIONS='--inspect' next dev -p 6868",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint '**/*.js'",
     "format": "prettier --write \"**/*.{js,mjs,vue,json,md}\" --loglevel silent"
+    "lint": "eslint --fix '**/*.{js,jsx}'",
   },
   "dependencies": {
     "lodash": "^4.17.20",
@@ -17,8 +17,12 @@
     "babel-eslint": "^10.1.0",
     "debug": "^4.3.1",
     "eslint": "^7.19.0",
+    "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "husky": "^4.3.8",
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.1",
@@ -26,22 +30,34 @@
   },
   "eslintConfig": {
     "root": true,
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    },
     "env": {
-      "node": true
+      "browser": true,
+      "node": true,
+      "es6": true
     },
     "extends": [
       "eslint:recommended",
-      "plugin:react/recommended",
+      "airbnb",
+      "airbnb/hooks",
       "prettier",
       "prettier/react"
     ],
+    "parser": "babel-eslint",
     "parserOptions": {
-      "parser": "babel-eslint",
       "sourceType": "module",
-      "ecmaVersion": 2015
+      "ecmaVersion": 6
     },
     "rules": {
-      "react/react-in-jsx-scope": 0
+      "react/react-in-jsx-scope": 0,
+      "no-use-before-define": 0,
+      "import/no-unresolved": 0,
+      "react/forbid-prop-types": 0,
+      "react/jsx-props-no-spreading": 0
     }
   },
   "eslintIgnore": [
@@ -49,8 +65,7 @@
     ".next/**",
     ".yarn/**",
     "public/**",
-    "scripts/**",
-    ".pnp.js"
+    "scripts/**"
   ],
   "husky": {
     "hooks": {
