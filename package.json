@@ -4,8 +4,8 @@
     "dev:debug": "NODE_OPTIONS='--inspect' next dev -p 6868",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --write \"**/*.{js,mjs,vue,json,md}\" --loglevel silent"
     "lint": "eslint --fix '**/*.{js,jsx}'",
+    "format": "prettier --write \"**/*.{js,jsx,mjs,vue,json,md}\" --loglevel silent"
   },
   "dependencies": {
     "debug": "^4.3.1",
