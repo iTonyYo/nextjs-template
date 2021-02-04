@@ -1,6 +1,6 @@
 import debug from 'debug';
-import unique from '../unique';
+import { PROJECT_NAME } from '../unique';
 
-const log = debug(`${unique.PROJECT_NAME}:log`);
+const log = debug(`${PROJECT_NAME}:log`);
 
 export default log;

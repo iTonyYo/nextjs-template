@@ -8,6 +8,7 @@
     "lint": "eslint --fix '**/*.{js,jsx}'",
   },
   "dependencies": {
+    "debug": "^4.3.1",
     "lodash": "^4.17.20",
     "next": "^10.0.6",
     "react": "^17.0.1",
@@ -15,7 +16,6 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "debug": "^4.3.1",
     "eslint": "^7.19.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^7.2.0",
