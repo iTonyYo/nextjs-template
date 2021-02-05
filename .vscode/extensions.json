@@ -21,6 +21,7 @@
     "visualstudioexptteam.vscodeintellicode",
     "ericadamski.carbon-now-sh",
     "file-icons.file-icons",
-    "vscode-icons-team.vscode-icons"
+    "vscode-icons-team.vscode-icons",
+    "dsznajder.es7-react-js-snippets"
   ]
 }
