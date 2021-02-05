@@ -4,6 +4,10 @@ let tmpConfig = {
   sassOptions: {
     outputStyle: 'compressed',
   },
+  i18n: {
+    locales: ['en-US', 'zh'],
+    defaultLocale: 'zh',
+  },
 };
 
 if (inDebugMode()) {
