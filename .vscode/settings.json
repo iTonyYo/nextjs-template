@@ -57,7 +57,7 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.scrollback": 5000,
 
-  "workbench.colorTheme": "Juicy Contrast (rainglow)",
+  "workbench.colorTheme": "Default Light+",
   "workbench.list.smoothScrolling": true,
   "workbench.sideBar.location": "right",
   "workbench.editor.pinnedTabSizing": "compact",
